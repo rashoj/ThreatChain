@@ -1,0 +1,87 @@
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+.threat-card-white {
+    background-color: white;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    list-style: none;
+  }
+  
+  .threat-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .threat-section {
+    margin-top: 1.25rem;
+  }
+  
+  .threat-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 0.25rem;
+  }
+  
+  .threat-field {
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+  }
+  
+  .threat-description {
+    font-style: italic;
+    margin-top: 0.25rem;
+    color: #374151;
+  }
+  
+  .reference-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #2563eb;
+    text-decoration: underline;
+  }
+.threatfeed-wrapper {
+  min-height: 100vh;
+  background: url('../assets/threatchain-bg.png') center center / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.threatfeed-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(13, 17, 23, 0.6), rgba(31, 41, 55, 0.8));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}

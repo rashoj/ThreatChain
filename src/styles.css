@@ -1,0 +1,95 @@
+/*Global reset for consistent styling across browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #63b3ed;
+    transition : color 0.3s ease-in-out;
+
+}
+
+a:hover {
+    color: #ff8c00;
+}
+
+/*container to hold the sidebar and main content */
+
+.app-container {
+    display:flex;
+    height: 100vh;
+}
+
+/* sidebar styles*/
+
+.sidebar {
+    background-color: #2d3748;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidebar a{
+    margin: 15px 0;
+    font-size: 18px;
+    color: #e5e73b;
+}
+.sidebar a:hover {
+    color: #ff8c00;
+
+}
+
+/*Main content Area*/
+
+.main-content {
+    flex: 1;
+    padding:20px;
+    overflow-y: auto;
+}
+
+/*Header style*/
+
+.header {
+    background-color: #2d3748;
+    padding: 20px;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+a{
+    transition: color 0.3s ease-in-out, background-color 0.3s ease;
+
+}
+
+a:hover {
+    color: #ff8c00;
+    background-color: rgba(255, 140, 0, 0.1);
+}
+
+.sidebar a:hover {
+    padding-left: 10px;
+    transition: padding-left 0.2s ease;
+}

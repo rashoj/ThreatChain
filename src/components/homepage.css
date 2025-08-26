@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Segoe UI'm sans-serif;
+}
+
+header{
+    background: linear-gradient(135deg, #0d1117, #1f2937);
+    color: white;
+}
+
+.navbar-logo{
+    height: 45px;
+    width:auto;
+    object-fit: contain;
+    padding: 7px;
+    transform: scale(4);
+    margin-left: 20px;
+}
+
+.navbar-brand span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 24px;
+}
+
+.homepage-wrapper {
+    background: linear-gradient(to bottom right, #0d1117, #1f2937);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 70px; /* spacing below fixed navbar */
+  }
+  
+  .hero-section {
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+    background: url('../assets/threatchain-bg.png') center center / cover no-repeat;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(13,17,23,0.0), rgba(31,41,55,0.1));
+    z-index: 0;
+    pointer-events: none;
+  }
+  .feature-card {
+    background-color: #ffffff0a;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-4px);
+    background-color: #ffffff14;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  }
+  .hero-title {
+    color: #ffffff;
+    font-weight: 800;
+    text-shadow: 0 1px 10px rgba(255, 255, 255, 0.4);
+  }

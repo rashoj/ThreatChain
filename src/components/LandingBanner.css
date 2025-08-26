@@ -1,0 +1,8 @@
+/* src/components/LandingBanner.css */
+.landing-banner {
+  height: 100vh;
+  background: url('../assets/threatchain-bg.png') center center / cover no-repeat;
+  color: white;
+  padding: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
