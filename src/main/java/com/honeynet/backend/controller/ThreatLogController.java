@@ -17,9 +17,8 @@ import java.util.stream.Collectors;
 public class ThreatLogController {
 
     private final ThreatLogService threatLogService;
-
-    @Autowired
     private final AlienVaultService alienVaultService;
+
 
     @Autowired
     public ThreatLogController(ThreatLogService threatLogService, AlienVaultService alienVaultService) {

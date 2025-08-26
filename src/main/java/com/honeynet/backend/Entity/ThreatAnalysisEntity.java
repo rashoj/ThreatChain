@@ -1,4 +1,4 @@
-package com.honeynet.backend.Entity;
+package com.honeynet.backend.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
@@ -283,4 +283,5 @@ public class ThreatAnalysisEntity {
         indicators.remove(indicator);
         indicator.setThreatAnalysis(null);
     }
+
 }

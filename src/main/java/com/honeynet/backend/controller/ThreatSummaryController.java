@@ -89,5 +89,11 @@ public class ThreatSummaryController {
             return ResponseEntity.internalServerError().build();
         }
     }
+//    @GetMapping("/api/demo/threats-old")
+//    public ResponseEntity<List<ThreatSummaryDTO>> getDemoThreatSummaries() {
+//        List<ThreatSummaryDTO> demoSummaries = alienVaultService.getDemoThreatSummaries();
+//        return ResponseEntity.ok(demoSummaries);
+//    }
+
 }
 

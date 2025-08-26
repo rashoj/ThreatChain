@@ -1,8 +1,7 @@
 package com.honeynet.backend.service;
 
-import com.honeynet.backend.Entity.BlockchainLog;
+import com.honeynet.backend.entity.BlockchainLog;
 import com.honeynet.backend.model.BlockchainLogRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

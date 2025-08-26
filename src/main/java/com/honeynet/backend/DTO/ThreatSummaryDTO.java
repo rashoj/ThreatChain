@@ -1,9 +1,9 @@
 package com.honeynet.backend.DTO;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.honeynet.backend.Entity.RiskLevel;
+import com.honeynet.backend.entity.RiskLevel;
+import jakarta.persistence.Column;
 import lombok.Data;
-import com.honeynet.backend.DTO.ThreatSummaryDTO;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -16,11 +16,20 @@ public class ThreatSummaryDTO {
     private String sectors;
     private String countries;
 
+    @JsonProperty("malware_families")
+    private List<String> malwareFamilies;
+
     @JsonProperty("risk_score")
     private RiskLevel riskLevel;
 
     @JsonProperty("ai_summary")
     private String aiSummary;
+
+    @JsonProperty("clientName")
+    @Column(name = "client_name")
+    private String clientName;
+
+    private Double confidenceScore;
 
     @JsonProperty("generated_at")
     private LocalDateTime generatedAt;

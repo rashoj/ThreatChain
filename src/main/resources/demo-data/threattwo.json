@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1003",
+    "name": "Ransomware Campaign Gamma",
+    "description": "Ransomware attacks encrypting files and demanding payment.",
+    "authorName": "SecOpsTeam",
+    "clientName": "clientC",
+    "created": "2024-03-10T14:00:00",
+    "modified": "2024-03-15T18:00:00",
+    "revision": 1,
+    "tlp": "RED",
+    "adversary": "RansomGroupY",
+    "moreIndicators": true,
+    "tags": ["ransomware", "encryption", "extortion"],
+    "attackIds": ["T1486"],
+    "references": ["https://example.com/ransomware-gamma"],
+    "extraSource": "Partner Intel",
+    "malware_families": ["GammaRansomware"],
+    "industries": ["Manufacturing", "Energy"],
+    "targeted_countries": ["US", "FR", "JP"],
+    "riskLevel": "MEDIUM",
+    "transaction_hash": "demo-txhash-12",
+    "action": "DEMO_LOGGED",
+    "details":"This is demo log entry for id 1003",
+    "hash": "somehashvalue",
+    "previous_hash": "previoushashvalue",
+        "indicators": [
+      {
+        "indicator": "evil-hash-12345",
+        "type": "file-hash",
+        "created": "2024-03-05T12:00:00",
+        "content": "Hash of ransomware executable",
+        "title": "Ransomware Executable Hash",
+        "description": "SHA256 hash for ransomware binary",
+        "expiration": "2024-09-01T00:00:00",
+        "is_active": true,
+        "role": "Malware"
+      }
+    ],
+    "ai_summary": "This ransomware campaign targets critical infrastructure with file encryption."
+  }
+]

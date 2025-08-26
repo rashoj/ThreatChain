@@ -3,7 +3,7 @@ package com.honeynet.backend.DTO;
 import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.honeynet.backend.Entity.IndicatorEntity;
+import com.honeynet.backend.entity.IndicatorEntity;
 import lombok.Data;
 
 @Data

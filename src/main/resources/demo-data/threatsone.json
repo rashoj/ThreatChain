@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1002",
+    "name": "Phishing Campaign Beta",
+    "description": "Phishing attacks targeting enterprise email users.",
+    "authorName": "CyberSecGroup",
+    "clientName": "clientB",
+    "created": "2024-02-01T09:15:00",
+    "modified": "2024-02-03T16:45:00",
+    "revision": 2,
+    "tlp": "GREEN",
+    "adversary": "PhishersGroupX",
+    "moreIndicators": false,
+    "tags": ["phishing", "email", "enterprise"],
+    "attackIds": ["T1566"],
+    "references": ["https://example.com/phishing-beta"],
+    "extraSource": "Open Source Intel",
+    "malware_families": ["Malware"],
+    "industries": ["Technology", "Healthcare"],
+    "targeted_countries": ["US", "CA"],
+    "riskLevel": "LOW",
+    "transaction_hash": "demo-txhash-11",
+    "action": "DEMO_LOGGED",
+    "details":"This is demo log entry for id 1002",
+    "hash": "somehashvalue",
+    "previous_hash": "previoushashvalue",
+    "indicators": [
+      {
+        "indicator": "malicious-domain.com",
+        "type": "domain",
+        "created": "2024-01-30T10:00:00",
+        "content": "Phishing domain hosting fake login page",
+        "title": "Phishing Domain",
+        "description": "Domain used for phishing emails",
+        "expiration": "2024-06-01T00:00:00",
+        "is_active": true,
+        "role": "Phishing"
+      }
+    ],
+    "ai_summary": "This phishing campaign targets enterprise users with fake login pages."
+  }
+]

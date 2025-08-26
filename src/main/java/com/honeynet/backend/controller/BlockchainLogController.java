@@ -1,6 +1,5 @@
 package com.honeynet.backend.controller;
-import com.honeynet.backend.Entity.ThreatAnalysisEntity;
-import com.honeynet.backend.Entity.BlockchainLog;
+import com.honeynet.backend.entity.BlockchainLog;
 import com.honeynet.backend.service.BlockchainLogService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -9,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import com.honeynet.backend.DTO.BlockchainLogDTO;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/blockchain-logs/")

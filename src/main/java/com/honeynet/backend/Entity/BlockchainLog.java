@@ -1,4 +1,4 @@
-package com.honeynet.backend.Entity;
+package com.honeynet.backend.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -24,10 +24,10 @@ public class BlockchainLog {
     @Column
     private LocalDateTime timestamp;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "threat_id", nullable = false, foreignKey = @ForeignKey(name = "fk_blockchain_threat"))
-    @OnDelete(action = OnDeleteAction.CASCADE) // Enable cascading delete in DB
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "threat_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "fk_blockchain_threat"))
     private ThreatAnalysisEntity threat;
+
 
     @Override
     public String toString() {

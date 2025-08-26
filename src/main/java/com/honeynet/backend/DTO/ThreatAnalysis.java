@@ -1,7 +1,8 @@
 package com.honeynet.backend.DTO;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.honeynet.backend.entity.RiskLevel;
+import jakarta.persistence.Column;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -28,6 +29,9 @@ public class ThreatAnalysis {
 
     private List<IndicatorDTO> indicators; // ✅ Fixed here
 
+//    private String aiSummary;
+
+    @JsonProperty("ai_summary")
     private String aiSummary;
 
     private List<String> tags;
@@ -47,4 +51,13 @@ public class ThreatAnalysis {
 
     @JsonProperty("extraSource")
     private String extraSource;
+
+    @JsonProperty("clientName")
+    @Column(name = "client_name")
+    private String clientName;
+
+    @JsonProperty("riskLevel")
+    private RiskLevel riskLevel;
+
+    private Double confidenceScore;
 }

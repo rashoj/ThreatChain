@@ -1,9 +1,9 @@
 package com.honeynet.backend.service;
 
-import com.honeynet.backend.Entity.ThreatSummaryEntity;
+import com.honeynet.backend.entity.ThreatSummaryEntity;
 import com.honeynet.backend.model.ThreatSummaryRepository;
-import com.honeynet.backend.Entity.ThreatAnalysisEntity;
-import com.honeynet.backend.Entity.IndicatorEntity;
+import com.honeynet.backend.entity.ThreatAnalysisEntity;
+import com.honeynet.backend.entity.IndicatorEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

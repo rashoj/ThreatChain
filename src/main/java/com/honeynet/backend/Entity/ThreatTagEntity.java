@@ -1,4 +1,4 @@
-package com.honeynet.backend.Entity;
+package com.honeynet.backend.entity;
 
 import jakarta.persistence.*;
 

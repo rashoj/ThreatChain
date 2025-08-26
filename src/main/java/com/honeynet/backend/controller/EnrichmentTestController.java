@@ -1,7 +1,6 @@
 package com.honeynet.backend.controller;
 
-import com.honeynet.backend.DTO.ThreatAnalysis;
-import com.honeynet.backend.Entity.ThreatAnalysisEntity;
+import com.honeynet.backend.entity.ThreatAnalysisEntity;
 import com.honeynet.backend.service.AlienVaultService;
 import com.honeynet.backend.service.ThreatSummaryPipeline;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1001",
+    "name": "Malware Campaign Alpha",
+    "description": "A widespread malware campaign targeting financial institutions.",
+    "authorName": "ThreatIntelTeam",
+    "clientName": "clientA",
+    "created": "2024-01-15T10:00:00",
+    "modified": "2024-01-20T12:30:00",
+    "revision": 1,
+    "tlp": "AMBER",
+    "adversary": "APT28",
+    "moreIndicators": true,
+    "tags": ["malware", "financial", "APT"],
+    "attackIds": ["T1001", "T1059"],
+    "references": ["https://example.com/malware-alpha"],
+    "extraSource": "Internal analysis",
+    "malware_families": ["AlphaMalware"],
+    "industries": ["Finance", "Banking"],
+    "targeted_countries": ["US", "UK", "DE"],
+    "riskLevel": "HIGH",
+    "transaction_hash": "demo-txhash-10",
+    "action": "DEMO_LOGGED",
+    "details":"This is demo log entry for id 1001",
+    "hash": "somehashvalue",
+    "previous_hash": "previoushashvalue",
+    "indicators": [
+      {
+        "indicator": "192.168.1.100",
+        "type": "IPv4",
+        "created": "2024-01-10T08:00:00",
+        "content": "Command and control server",
+        "title": "C2 Server IP",
+        "description": "Primary C2 server for malware control",
+        "expiration": "2024-07-01T00:00:00",
+        "is_active": true,
+        "role": "C2"
+      }
+    ],
+    "ai_summary": "This malware campaign targets banks and uses advanced evasion techniques."
+  }
+]
